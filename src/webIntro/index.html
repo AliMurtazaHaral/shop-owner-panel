@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/39405729c1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+
+    <title>ATOM</title>
+</head>
+<body>
+      <div class="container-fluid">
+       
+
+          <header>
+
+            <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+            <div class="overlay"></div>
+          
+            <!-- The HTML5 video element that will create the background video on the header -->
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+              <source src="./assets/background-video.mp4" type="video/mp4">
+            </video>
+          
+            <!-- The header content -->
+            <div class="container h-100">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                    <a class="navbar-brand" href="index.html"><img src="assets/svg-logo.svg" class="img-fluid logo" alt="..."></a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class=" navbar-collapse collapse " id="navbarTogglerDemo01">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a href="#services">
+                              <button type="button" class="btn text-light nav-button">Services</button>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#downloads">
+                              <button type="button" class="btn text-light nav-button">Downloads</button>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#faqs">
+                              <button type="button" class="btn text-light nav-button">FAQ's</button>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#contact">
+                              <button type="button" class="btn text-light nav-button">Contact Us</button>
+
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="account.html">
+                              <button type="button" onclick="account.html" class="btn btn-light text-black">Join us</button>
+
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    
+                  </nav>
+
+              <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                  <h1 class="display-3" style=" font-family: 'satisfy'; text-decoration: underline solid 5px #EBBF4D ; text-underline-offset: 10px;">AUTO MECHANIC</h1>
+                  <h3 class=" mb-0"style=" font-family: 'Pacifico';">Add more life to your car</h3>
+                </div>
+              </div>
+            </div>
+          </header>
+          
+          <!-- Page section example for content below the video header -->
+          <section class="my-5" style="padding:3rem ;">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5 mx-auto">
+                 <h2>A BRIEF REVIEW ON OUR CAREER AND EXPERIENCE IN REPAIRING CARS</h2>
+                   <div style="padding-top:1rem;">
+                    <p>
+                        We perform high quality and guaranteed service you can trust at a fairprice.
+                        Our services include everything from a basic oil change, brake repair and many other repairment
+                        of vehicles.
+                    </p>
+                   </div>
+                   <div class="row">
+                    <div class="col-md-4">
+                        <img src="assets/check.png" class=" icons" alt="...">
+                        <p style="text-align: center ; font-weight: 700; padding-top: 2px;">Quick and easy vehicle examination</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/maintenance.png" class=" icons" alt="...">
+                        <p style="text-align: center ;font-weight: 700;padding-top: 2px;">
+                            Professional service with availability of all car parts
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/car-key.png" class=" icons" alt="...">
+                        <p style="text-align: center ;font-weight: 700;padding-top: 2px;">
+                            Returns car to the customers with 100% satisfaction
+                        </p>
+                    </div>
+                   </div>
+                </div>
+                <div class="col-md-5 mx-auto">
+                    <img src="assets/p2.jpg" class="img-fluid" alt="...">
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="my-5 text-light" style="background-color: black ; padding: 3rem;" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mx-auto">
+                        <h1 style="text-align: center ; text-decoration: underline solid 5px #EBBF4D ; text-underline-offset: 10px;">OUR SERVICES</h1>
+                    </div>
+                </div>
+              <div class="row" style="padding-top: 90px ; padding-bottom: 40px;">
+                <div class="col-md-3">
+                    <img src="assets/mechanic.png" class="img-fluid services bg-white" style="height:45%; border-radius: 50%; " alt="...">
+                    <p style="text-align: center ;font-weight: 700;padding-top: 10px;">
+                        A large number of mechanics having experties in all kinds of vehicle repairment are there for you tofix your car.
+                    </p>
+                </div>
+                <div class="col-md-3 ">
+                    <img src="assets/shop.png" class="img-fluid services bg-white" style="height:45%; border-radius: 50%; padding: 3%; border-color: black;"  alt="...">
+                    <p style="text-align: center ;font-weight: 700;padding-top: 15px;">
+                       Authorized dealer of spare-parts joined us to sell their high quality products with you.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/rider.png" class="img-fluid services bg-white" style="height:45%; border-radius: 50%;" alt="...">
+                    <p style="text-align: center ;font-weight: 700;padding-top: 10px;">
+                        In order to make you comfortable, we provide you the service of home delivery of auto spare parts.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/anywhere.png" class="img-fluid services bg-white" style="height: 45%; border-radius: 50%;" alt="...">
+                    <p style="text-align: center ;font-weight: 700;padding-top: 10px;">
+                        If your car is out of order, don't worry, Mechanin will get there at your location and fix it up.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+          <section id="downloads">
+           <div class="container">
+            <div class="row section6 pb-5">
+              <div class="col-md-6 col-sm-12 order-sm-1 order-md-2 section6_content">
+                <div class="row order-sm-1 pt-5">
+                  <h1 style="color: #EBBF4D" class="">Don’t Just Take Our Word For It</h1>
+                </div>
+                <br>
+                <div class="row order-sm-2">
+                  <div class="col-md-6">
+                    <button class="playstore order-sm-1" type="submit">
+                      <div class="row" style="margin-top: 12px;">
+                        <div class="col-4"><i class="fab fa-google-play" style="font-size: 70px;"></i></div>
+                        <div class="col-8">
+                          <div class="row">
+                            <p style="font-size: 19px; font-weight: 400;margin-bottom: -6px;">Download on the</p>
+                          </div>
+                          <div class="row">
+                            <p style="font-size: 25px; font-weight: 750;">Play Store</p>
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                 <div class="col-md-6">
+                  <button class="appstore order-sm-2 " type="submit">
+                    <div class="row" style="margin-top: 12px;">
+                      <div class="col-4"><i class="fab fa-apple" style="font-size: 80px; margin-top: -8px;"></i></div>
+                      <div class="col-8">
+                        <div class="row">
+                          <p style="font-size: 19px;  font-weight: 400;margin-bottom:-6px;">Download on the</p>
+                        </div>
+                        <div class="row">
+                          <p style="font-size: 25px; font-weight: 750;">App Store</p>
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                 </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 order-sm-2 order-md-1">
+                <img src="assets/section6.JPG" class="img-fluid section6_img">
+              </div>
+            </div>
+           </div>
+          </section>
+
+          <section class="my-5 text-light" style="background-color: black ; padding: 3rem;" id="faqs">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <h1 style="text-align: center ; text-decoration: underline solid 5px #EBBF4D ; text-underline-offset: 10px;">Frequently Asked Questions</h1>
+                </div>
+            </div>
+              <div class="row pt-5">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+         
+      <section class="pb-5" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 mx-auto">
+                <h1 style="text-align: center ; text-decoration: underline solid 5px #EBBF4D ; text-underline-offset: 10px;">Contact Us</h1>
+            </div>
+        </div>
+          <div class="row pt-5">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your firstname">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your last name">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email Adress</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email Address">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter contact number">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+              </div>
+              <div class="mb-3 d-flex text-center align-items-center">
+                <button type="button" class="btn btn-dark text-light mx-auto">Submit</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container-fluid">
+
+          <footer style="background-color: black">
+            <div class="container p-4 text-light">
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <a class="navbar-brand" href="index.html"><img src="assets/svg-logo.svg" class="img-fluid" style="height: 50%; width: 50%;"alt="..."></a> 
+                <p>
+                    Auto Mecanic brings the new innovation in this modern era by giving you the ease of booking the mechanic and ordering the spare parts of the vehicle at your doorstep.
+                  </p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <h5 class="mb-3 text-light" style="text-decoration: underline solid 5px #EBBF4D ; text-underline-offset: 10px">links</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-1">
+                      <a href="#services" style="color: white; text-decoration: none;">Our Services</a>
+                    </li>
+                    <li class="mb-1">
+                      <a href="#downloads" style="color: white;  text-decoration: none;">Downloads</a>
+                    </li>
+                    <li class="mb-1">
+                      <a href="#faqs" style="color: white;  text-decoration: none;">FAQ's</a>
+                    </li>
+                    <li>
+                      <a href="#contact" style="color: white;  text-decoration: none;">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 ">
+                  <h3 class="mb-1 text-light" style = "padding-bottom: 5%;text-decoration: underline solid 5px #EBBF4D ; text-underline-offset: 10px;">Become a part of us..!</h3>
+                  <p>
+                    Want to sell your products..?
+                  </p>
+                  <p>
+                   Click on the following button to create new account and start selling your products..!
+                  </p>
+                  <div class="d-flex text-center align-items-center">
+                    <a href="account.html">
+                      <button type="button" class="btn btn-light text-black">Become a seller</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              <p class="text-light">© 2022 Copyright: Comsats University Islamabad</p>
+            </div>
+            <!-- Copyright -->
+          </footer>
+          
+        </div>
+        <!-- End of .container -->
+      </section>
+
+        
+      </div>
+</body>
+</html>

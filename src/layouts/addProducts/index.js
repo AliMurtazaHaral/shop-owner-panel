@@ -22,6 +22,8 @@ const storage = getStorage();
 function Tables() {
   const [imageUpload, setImageUpload] = useState(null);
   const [productName, setProductName] = useState("");
+  const [shopName, setShopName] = useState("");
+  const [address, setAddress] = useState("");
   const [productDescription, setProductDescription] = useState("");
   const [productPrice, setProductPrice] = useState("");
   const [productQuantity, setproductQuantity] = useState("");
@@ -35,7 +37,9 @@ function Tables() {
       productPrice: productPrice,
       productQuantity: productQuantity,
       productImage: imageUpload.name,
-      productRating: "5"
+      productRating: "5",
+      address: address,
+      shopName: shopName
     });
     alert("Data has been added successfully");
   }
@@ -91,12 +95,22 @@ function Tables() {
             <MDBox mb={2}>
             <MDInput value={productQuantity} onChange={(e) => setproductQuantity(e.target.value)} type="text" label="Product Quantity" variant="standard" fullWidth />
             </MDBox>
+            <MDBox mb={2}>
+            <MDInput value={shopName} onChange={(e) => setShopName(e.target.value)} type="text" label="Shop Name" variant="standard" fullWidth />
+            </MDBox>
+            <MDBox mb={2}>
+            <MDInput value={address} onChange={(e) => setAddress(e.target.value)} type="text" label="Address" variant="standard" fullWidth />
+            </MDBox>
             <label>Product Image</label>
           
       <input type='file' onChange={(event)=>{setImageUpload(event.target.files[0])}} className="form-control"></input>
             <MDBox mt={4} mb={1}>
-              <MDButton to="/authentication/sign-in" variant="gradient" color="info" fullWidth>
+              <MDButton variant="gradient" color="info" fullWidth>
+              <button onClick={(e)=>{
+                saveDatatoFirebase(e);
+              }}>
               Add Product
+              </button>
               </MDButton>
             </MDBox>
             

@@ -55,13 +55,12 @@ function ViewPendingOrders() {
           {productData?.map(({ id, data }) => (
             <>
               
-                  <li class="table-row">
+                  {data.status=='Pending'?<li class="table-row">
                     <div class="col col-1" data-label="Name">{data.productName}</div>
                     <div class="col col-2" data-label="City">{data.deliveryPoint}</div>
                     <div class="col col-2" data-label="City">{data.pickupPoint}</div>
                     <div class="col col-3" data-label="category">{data.productPrice}</div>
-                  </li>
-                
+                  </li>:null}
 
             </>
           ))}

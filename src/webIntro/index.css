@@ -1,0 +1,166 @@
+.logo{
+    width: 100px;
+    height: 200px;
+}
+.nav-item{
+    margin-left: 2px;
+}
+.nav-button:hover{
+   border-color: white;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+  
+  /* Media Query for devices withi coarse pointers and no hover functionality */
+  
+  /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+  
+ /* @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+  
+    header video {
+      display: none;
+    }
+  }
+  */
+ .icons{
+    height: 70px;
+    width: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ .services{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 145px;
+   
+    
+}
+
+
+
+
+@media (max-width: 768px) {
+  
+   
+  .playstore{
+      background-color: #ECC04D;
+      color: #000;
+        border-radius: 25px;
+        height: 110px;
+        font-size: medium;
+        font-weight: 500;
+        width: 250px;
+        margin-left: 15%;
+        margin-right: 15%;
+        box-shadow: 5px 5px 2px #aaaaaa;
+    }
+    .appstore{
+      background-color: #ECC04D;
+      color: #000;
+    
+        border-radius: 25px;
+        height: 110px;
+        font-size: medium;
+        font-weight: 500;
+        width: 250px;
+        margin-left: 56px;
+        margin-top: 3%;
+        margin-bottom: 2%;
+        box-shadow: 5px 5px 2px #aaaaaa;
+        
+    }
+  
+  }
+  
+  
+  
+  
+  @media (max-width: 1920px){
+  
+  
+
+  
+  
+    
+    .section6_content{
+      margin-top: 6%;
+    padding-right: 5%;
+    
+    }
+    .section6_img{
+     width: 500px;
+     padding-left: 10%;
+    
+    }
+      .playstore{
+      background-color: #ECC04D;
+      color: #000;
+        border-radius: 25px;
+        height: 110px;
+        font-size: medium;
+        font-weight: 500;
+        width: 250px;
+       margin-left: 2%;
+        box-shadow: 5px 5px 2px #aaaaaa;
+    }
+    .appstore{
+      background-color: #ECC04D;
+      color: #000;
+    
+        border-radius: 25px;
+        height: 110px;
+        font-size: medium;
+        font-weight: 500;
+        width: 250px;
+       margin-left: 10px;
+        box-shadow: 5px 5px 2px #aaaaaa;
+    }
+  
+ 
+  }
+ 

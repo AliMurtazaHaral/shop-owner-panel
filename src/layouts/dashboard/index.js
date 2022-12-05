@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
-
+import React,{useEffect,useState} from 'react';
 // Material Dashboard 2 React example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
@@ -20,9 +20,38 @@ import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
 // Dashboard components
 import Projects from "layouts/dashboard/components/Projects";
 import OrdersOverview from "layouts/dashboard/components/OrdersOverview";
-
+import db from '../../firebase/Config';
 function Dashboard() {
   const { sales, tasks } = reportsLineChartData;
+  const [totalUsers, setTotalUsers] = useState([]);
+  const [todaysUsers, setTodaysUsers] = useState([]);
+  const [totalShopedProducts, setTotalShopedProducts] = useState([]);
+  useEffect(() => {
+    db.collection("products").onSnapshot((snapshot) => {
+      setTotalUsers(
+        snapshot.docs.map((doc) => ({
+          id: doc.id,
+          data: doc.data(),
+        }))
+      );
+    });
+    db.collection("shoped_products").onSnapshot((snapshot) => {
+      setTotalShopedProducts(
+        snapshot.docs.map((doc) => ({
+          id: doc.id,
+          data: doc.data(),
+        }))
+      );
+    });
+    db.collection("users").onSnapshot((snapshot) => {
+      setTodaysUsers(
+        snapshot.docs.map((doc) => ({
+          id: doc.id,
+          data: doc.data(),
+        }))
+      );
+    });
+  }, []);
 
   return (
     <DashboardLayout>
@@ -34,8 +63,8 @@ function Dashboard() {
               <ComplexStatisticsCard
                 color="dark"
                 icon="weekend"
-                title="Bookings"
-                count={281}
+                title="Total Products"
+                count={totalUsers.length}
                 percentage={{
                   color: "success",
                   amount: "+55%",
@@ -48,8 +77,8 @@ function Dashboard() {
             <MDBox mb={1.5}>
               <ComplexStatisticsCard
                 icon="leaderboard"
-                title="Today's Users"
-                count="2,300"
+                title="Shoped Products"
+                count={totalShopedProducts.length}
                 percentage={{
                   color: "success",
                   amount: "+3%",
@@ -63,8 +92,8 @@ function Dashboard() {
               <ComplexStatisticsCard
                 color="success"
                 icon="store"
-                title="Revenue"
-                count="34k"
+                title="Today's Users"
+                count={todaysUsers.length}
                 percentage={{
                   color: "success",
                   amount: "+1%",
@@ -78,8 +107,8 @@ function Dashboard() {
               <ComplexStatisticsCard
                 color="primary"
                 icon="person_add"
-                title="Followers"
-                count="+91"
+                title="Earnings"
+                count="21k"
                 percentage={{
                   color: "success",
                   amount: "",
@@ -127,16 +156,6 @@ function Dashboard() {
                   chart={tasks}
                 />
               </MDBox>
-            </Grid>
-          </Grid>
-        </MDBox>
-        <MDBox>
-          <Grid container spacing={3}>
-            <Grid item xs={12} md={6} lg={8}>
-              <Projects />
-            </Grid>
-            <Grid item xs={12} md={6} lg={4}>
-              <OrdersOverview />
             </Grid>
           </Grid>
         </MDBox>
